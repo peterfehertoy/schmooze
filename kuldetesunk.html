@@ -11,44 +11,39 @@
 		<link rel="stylesheet"  href="css/style.css"> 
 		<title>SCHMOOZE</title>
 		<link rel="shortcut icon" type="image/png" href="img/schmooze-icon.png"/>
-		<link rel="stylesheet" href="plugins/scrollbar/jquery.mCustomScrollbar.css" />	
+		<link rel="stylesheet" href="plugins/scrollbar/jquery.mCustomScrollbar.css" />
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">		
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
 		<script type="text/javascript" src="js/scripts.js"></script> 
 		<script type="text/javascript" src="js/animation.js"></script> 
 		<script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
+		<script>
+		$(window).load(function() {
+			// Animate loader off screen
+			$(".se-pre-con").fadeOut("slow");;
+		});
+		</script>
 
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-<script>
-  $(window).load(function() {
-    // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
-  });
-</script>
+		<script>
+			(function($){
+				$(window).on("load",function(){
+					$(".content").mCustomScrollbar();
+				});
+			})(jQuery);
+		</script>
 
-<script>
-    (function($){
-        $(window).on("load",function(){
-            $(".content").mCustomScrollbar();
-        });
-    })(jQuery);
-</script>
 </head>
 <body>
 <div class="se-pre-con"></div>
-  <div class="top-menu">
-     <ul data-scrollreveal="enter top over 0.5s after 0s">
-     <li><a href="index.html"><img id="mini-logo" src="img/schmoozelogo.png"></a></li>
-   	 <li><a href="#">küldetésünk</a></li>
-      <li><a href="cikkekoldal.php" >cikkek</a></li>
-     <!-- <li><a href="">oktatók</a></li> -->
-      <li><a href="treningek.html">tréningek</a></li>
-      <li><a href="kapcsolat.html">kapcsolat</a></li>
-    </ul>
+  <div id="topmenu" class="top-menu">
+		<script src="js/topmenu.js"></script>
+		
+ 
   </div>
   <div class="content-window">
   	<div class="baloldal"  >
@@ -78,6 +73,9 @@
 
 
 
-<script>
-</script>
+	  <script>
+			$(function(){
+				$("#topmenu").load("topmenu.html");
+			});
+		</script>
 </body>

@@ -46,78 +46,57 @@
 
 <body>
 <div class="se-pre-con"></div>
-  <div class="top-menu">
-    <ul data-scrollreveal="enter top over 0.5s after 0s">
-     <li><a href="index.html">főoldal</a></li>
-   	 <li><a href="kuldetesunk.html">küldetésünk</a></li>
-      <li><a href="cikkekoldal.php" >cikkek</a></li>
-      <!-- <li><a href="">oktatók</a></li> -->
-      <li><a href="treningek.html">tréningek</a></li>
-      <li><a href="#">kapcsolat</a></li>
-    </ul>
-  </div>
+	<div id="topmenu" class="top-menu">
+		<script src="js/topmenu.js"></script>
+	</div>
 
   <div class="content-window">
 
   	<div class="baloldal"  >
 	  		<img src="img/menu-kapcsolat.png" data-scrollreveal="enter left over 0.5s after 0.2s">
-			
-	  	
   	</div>
 
-
-
-
   	<div class="jobboldal">
-  		
-	  	<div class="right-content">
-			  		
-
-
-		  			<div id="myDIV" class="cikkcontent mCustomScrollbar" data-mcs-theme="dark-thin" data-scrollreveal="enter right over 0.5s after 0.4s">	
+  		<div class="right-content">
+		  	<div id="myDIV" class="cikkcontent mCustomScrollbar" data-mcs-theme="dark-thin" data-scrollreveal="enter right over 0.5s after 0.4s">	
 		  			
-				  		<div class="kapcsolat">
-					  		
-							<div class="levelkuldes">
-<h1>kapcsolat</h1><br>
-							  	<ul id="gform_fields_1" class="">
-								  	<li id="field_1_1" class="">
+				<div class="kapcsolat">
+				<div class="levelkuldes">
+					<h1>kapcsolat</h1><br>
+						<ul id="gform_fields_1" class="">
+							<li id="field_1_1" class="">
 									
 									  	
-									  	<div class="" id=""> 
-									  		<label for="input_1_1_3">Név</label> 
-									  		<span id="" class=""> <input type="text" name="input_1.3" id="input_1_1_3" value="" aria-label="First name" tabindex="1" aria-required="true" aria-invalid="false" placeholder="Név"> 
-									  		</span> 
+							<div class="" id=""> 
+								<label for="input_1_1_3">Név</label> 
+								<span id="" class=""> <input type="text" name="input_1.3" id="input_1_1_3" value="" aria-label="First name" tabindex="1" aria-required="true" aria-invalid="false" placeholder="Név"> 
+								</span> 								  			
+							</div>
+								<br>
+							</li>
+							<li id="" class="">
+								<label class="" for="">Email cím</label>
+								<div class=""> <input name="" id="" type="email" value="" class="medium" tabindex="3" placeholder="Email Cím"></div>
+							</li>
+								<br>
+							<li id="" class="">
+								<label class="" for="">Telefonszám</label>
+								<div class=""><input name="" id="" type="tel" value="" class="medium" tabindex="4" placeholder="Telefonszám" aria-invalid="false"></div>
+							</li>
+								<br>
+							<li id="" class="">
+								<label class="" for="">Üzenet</label>
+								<div class="">
+								  	<textarea name="" id="" class="" tabindex="5" placeholder="Üzenet" aria-required="true" aria-invalid="false" rows="10" cols="50">	
+								  	</textarea>
+								</div>
+							</li>
+								<br>
+						</ul>
+							
+						<input type="submit" id="gform_submit_button_1" class="gform_button button" value="Küldés" tabindex="6" >
 
-									  		
-									  			
-									  	</div>
-								  		
-									  	<br>
-								  	</li>
-								  		
-								  		<li id="" class="">
-								  			<label class="" for="">Email cím</label>
-								  				<div class=""> <input name="" id="" type="email" value="" class="medium" tabindex="3" placeholder="Email Cím"></div>
-								  		</li>
-								  		<br>
-								  		<li id="" class="">
-								  			<label class="" for="">Telefonszám</label>
-								  				<div class=""><input name="" id="" type="tel" value="" class="medium" tabindex="4" placeholder="Telefonszám" aria-invalid="false"></div>
-								  		</li>
-								  		<br>
-								  		<li id="" class="">
-								  			<label class="" for="">Üzenet</label>
-								  				<div class="">
-								  					<textarea name="" id="" class="" tabindex="5" placeholder="Üzenet" aria-required="true" aria-invalid="false" rows="10" cols="50">	
-								  					</textarea>
-								  				</div>
-								  		</li>
-								  		<br>
-							  	</ul>
-							<input type="submit" id="gform_submit_button_1" class="gform_button button" value="Küldés" tabindex="6" >
-
-						  	</div>
+								</div>
 						  	<br><br><br>
 						  	
 								<p>Telefon: +36 30 665 9122<br>
@@ -125,20 +104,13 @@
 								Facebook: <a href="https://www.facebook.com/schmooze.hu/">https://www.facebook.com/schmooze.hu</a><br><br>
 
 								Kérdését vagy a tréningekre való jelentkezését az alábbi űrlap kitöltésével is megküldheti nekünk. 
-								Érdeklődését előre is köszönjük! </p>
+								Érdeklődését előre is köszönjük! </p>				
+				</div>
+			</div>	
+		</div> 	
+	</div>
 
-												  	
-								
-
-
-				  		</div>
-				  	</div>	
-			</div> 	
-	  	</div>
-
-  	</div>
-
-
+</div>
 
 
 

@@ -377,8 +377,8 @@ input[type=jelentkezem]#jelentkezem {
     color: black;
     display: block;
     font-size: 15px;
-    padding: 5px 10px;
-    max-width:104px;
+    padding: 5px 21px;
+    max-width:150px;
     text-transform: uppercase;
     font-family: nexa_rust_sans_black,helvetica,arial,sans-serif;
     -webkit-border-radius: 4px;
