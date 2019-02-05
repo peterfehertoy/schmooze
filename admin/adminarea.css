@@ -1,0 +1,409 @@
+body{
+	background-image:url('img/3_background.jpg');
+	background-position: fixed;
+    background-repeat: no-repeat;										
+    
+	height:100%;	
+}
+@font-face {
+  font-family: 'Bodoni MT';
+ 	src:url('../fonts/BOD_CR.ttf') format('truetype');
+	src:url('../fonts/BOD_CR.woff') format('woff');
+	src:url('../fonts/BOD_CR.woff2') format('woff2');
+}
+.lg-container{
+	display:flex;
+	justify-content:flex-end;
+	max-width:90%;
+	margin:100px auto 0 auto;
+	border:1px solid black;
+	background:rgba(0,0,0,.3);
+	-webkit-border-top-left-radius:10px;
+	-moz-border-top-left-radius:10px;
+	border-top-left-radius:10px;	
+	-webkit-border-top-right-radius:10px;
+	-moz-border-top-right-radius:10px;
+	border-top-right-radius:10px;
+	-webkit-box-shadow: 0 0  #aaa;
+	-moz-box-shadow: 0 0  #aaa;
+	box-shadow: 0 0  #aaa;
+	padding-top:10px;	
+}
+.lg-container h3{
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:20px;
+	text-align:center;
+	margin:0;
+}
+
+.user{
+	width:200px;
+	
+
+}
+.logout{
+	
+	width:100px;	
+}
+.logout a{
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:20px;
+	text-align:center;
+	opacity:1;
+	transition: 0.4s;
+}
+.logout a:hover{
+	
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:20px;
+	text-align:center;
+	opacity:0.5;
+	transition: 0.4s;
+}
+#content-1{
+	max-width:90%;
+	margin:auto;
+	border:1px solid black;
+	background: rgba(0,0,0);
+	-webkit-box-shadow: 0 0 2px #aaa;
+	-moz-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.container{
+	margin:auto;
+	max-width:950px;
+}
+.container h3{
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:25px;
+	text-align:center;
+	margin:0;
+}
+#btnujposzt{
+	border: 1px  solid;
+	border-color: black;
+	border-radius: 4px;
+	padding-top:5px;
+	padding-right:30px;
+	padding-left: 30px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:rgba(0,0,0,.2);
+
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+	transition-duration: 0.4s;
+}
+#btnujposzt:hover{
+	border-color: rgba(156,137,118,);
+	background:rgba(188,164,141,.5);
+	transition-duration: 0.4s;
+}
+#btnmegnyit {
+	border: 1px  solid;
+	border-color: black;
+	border-radius: 4px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:rgba(0,0,0,.3);
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+	transition-duration: 0.4s;
+}
+#btnmegnyit:hover {
+	border: 1px  solid;
+	border-color: black;
+	background:rgba(0, 0, 0, 0.2);
+
+	
+}
+#btnszerkeszt {
+	border: 1px  solid;
+	border-color: black;
+	border-radius: 4px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:rgba(0,0,0,.3);
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+	transition-duration: 0.4s;
+}
+#btnszerkeszt:hover {
+	border: 1px  solid;
+	border-color: black;
+	background:rgba(0, 0, 0, 0.2);
+
+	
+}
+#btntorol {
+	border: 1px  solid;
+	border-color: black;
+	border-radius: 4px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:rgba(0,0,0,.3);
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+	transition-duration: 0.4s;
+}
+#btntorol:hover {
+	border: 1px  solid;
+	border-color: black;
+	background:rgba(0, 0, 0, 0.2);
+
+	
+}
+table{
+	border-collapse: collapse;
+	border:1px solid black;
+	table-layout: fixed;
+	max-width:90%;
+	margin: auto;
+	margin-bottom:50px;
+}
+table tr td {
+	border:1px solid black;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.row{
+	margin:auto;
+	text-align:center;
+}
+#cim{
+
+  width: 500px; /* the normal 'fixed' width */
+  max-width: 500px; /* the normal 'fixed' width, to stop the cells expanding */
+  overflow:hidden;
+  white-space:nowrap;
+  text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+}
+
+#kezelo{
+
+  width: 360px; /* the normal 'fixed' width */
+  max-width: 360px; /* the normal 'fixed' width, to stop the cells expanding */
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+th{
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:18px;
+	text-align:center;
+	margin:0;
+}
+
+table tbody tr:nth-child(odd){
+	background:rgba(188,164,141,.2); 
+}
+
+#torles{
+		text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:20px;
+	text-align:center;
+	padding-top:50px;
+	margin:0;
+}
+
+
+
+
+
+.control-label{
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:18px;
+	text-align:center;
+	margin:0;
+}
+
+#btn{
+	border: 1px  solid;
+	border-color: black;
+	border-radius: 4px;
+	padding-top:5px;
+	padding-right:10px;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	background:rgba(188,164,141,.2);
+
+	text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:15px;
+	text-align:center;
+	margin:0;
+	transition-duration: 0.4s;
+
+}
+#btn:hover {
+	border: 1px  solid;
+	border-color: rgba(black);
+	background:rgba(0,0,0,.1);
+
+	
+}
+
+input{
+	background:rgba(0,0,0,.2);
+	border:1px  solid;
+	border-color:black;
+	color:black;
+	width:600px;
+	margin:auto;
+
+
+}
+#input{
+	height:500px;
+}
+textarea{
+	background:rgba(0,0,0,.2);
+	border:1px  solid;
+	border-color:black;
+	color:black;
+	width:600px;
+	margin:auto;
+	height:500px;
+
+}
+.container{
+	margin:auto;
+}
+
+.form-horizontal{
+	width:600px;
+	margin:auto;
+}
+
+.form-actions{
+	margin-top:10px;
+}
+
+#read{
+		text-decoration: none;
+	color: black;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:18px;
+	text-align:center;
+	
+	background:rgba(0,0,0,.2);
+	margin-top: 20px;
+	margin-bottom:20px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+		<meta name="author" content="Fehértóy Péter">
+		<meta name="copyright" content="Fehértóy Péter">
+		<meta name="keywords" content="HTML,CSS demo">
+		<meta name="description" content="Schmoose">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="height=device-height, initial-scale=1">
+		<link rel="stylesheet"  href="css/style.css"> 
+		<title>SCHMOOZE</title>
+		<link rel="shortcut icon" type="image/png" href="img/schmooze-icon.png"/>
+		<link rel="stylesheet" href="plugins/scrollbar/jquery.mCustomScrollbar.css" />	
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> 
+		<script type="text/javascript" src="js/scripts.js"></script> 
+		<script type="text/javascript" src="js/animation.js"></script> 
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+<script>
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+
+<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".content").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
+<script> //MAIL KÜLDÉS SCRIPTJE
+function _(id){ return document.getElementById(id); }
+function submitForm(){
+	_("mybtn").disabled = true;
+	_("status").innerHTML = 'Kérjük várjon...';
+	var formdata = new FormData();
+	formdata.append( "n", _("n").value );
+	formdata.append( "i", _("i").value );
+	formdata.append( "e", _("e").value );
+	formdata.append( "m", _("m").value );
+	var ajax = new XMLHttpRequest();
+	ajax.open( "POST", "plugins/contactform/example_parser_jelentkezes.php" );
+	ajax.onreadystatechange = function() {
+		if(ajax.readyState == 4 && ajax.status == 200) {
+			if(ajax.responseText == "success"){
+				_("my_form").innerHTML = '<p>Köszönjük szépen érdeklődését, hamarosan felvesszük Önnel a kapcsolatot.</p>';
+			} else {
+				_("status").innerHTML = ajax.responseText;
+				_("mybtn").disabled = false;
+			}
+		}
+	}
+	ajax.send( formdata );
+}
+</script>
+
+
+
+</head>
+
+<body>
+<div class="se-pre-con"></div>
+  <div class="top-menu">
+    <ul data-scrollreveal="enter top over 0.5s after 0s">
+    <li><a href="index.html"><img id="mini-logo" src="img/schmoozelogo.png"></a></li>
+   	 <li><a href="kuldetesunk.html">küldetésünk</a></li>
+      <li><a href="cikkekoldal.php" >cikkek</a></li>
+      <!-- <li><a href="">oktatók</a></li> -->
+      <li><a href="treningek.html">tréningek</a></li>
+      <li><a href="kapcsolat.html">kapcsolat</a></li>
+    </ul>
+  </div>
+
+  <div class="content-window">
+
+  	<div class="baloldal"  >
+	  		<img src="img/menu-kapcsolat.png" data-scrollreveal="enter left over 0.5s after 0.2s">
+			
+	  	
+  	</div>
+
+
+
+
+  	<div class="jobboldal">
+  		
+	  	<div class="right-content">
+			  		
+
+
+		  			<div id="myDIV" class="cikkcontent mCustomScrollbar" data-mcs-theme="dark-thin" data-scrollreveal="enter right over 0.5s after 0.4s">	
+		  			
+				  		<div class="kapcsolat">
+					  		
+							<div class="levelkuldes">
+						<h1>Jelentkezés</h1><br>
+						<form id="my_form" onsubmit="submitForm(); return false;">
+						  <p><input id="n" placeholder="Név" type="name" required></p><br>
+
+						  <p><input id="e" placeholder="Email cím" type="email" placeholder="Tréning időpontok" required></p><br>
+
+						  <input id="i" type="idopont" list="időpontok" placeholder="Tréning időpontok" required>
+						  <datalist id="időpontok">
+						    <option value="- július 4. (Kedd) 13:00-17:00">
+						   	<option value="- július 12. (Szerda) 13:00-17:00">
+						  </datalist> 
+							<br>
+
+
+						  <textarea id="m" placeholder="" rows="10" type="text" required></textarea><br>
+
+						  <p><input id="mybtn" type="submit" value="Küldés"> <span id="status"></span></p>
+						</form>
+					
+						  
+				  		</div>
+				  	</div>	
+			</div> 	
+	  	</div>
+
+  	</div>
+
+
+
+
+
+
+<script>
+function myFunction() {
+    var elmnt = document.getElementById("myDIV");
+    elmnt.scrollLeft = 0;
+    elmnt.scrollTop = 0;
+}
+</script>
+</body>
+
+

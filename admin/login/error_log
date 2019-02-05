@@ -1,0 +1,2 @@
+[22-Jun-2017 13:08:03 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): Connection refused in /home/schmooze/public_html/admin/db/admindb.php on line 2
+[22-Jun-2017 13:08:03 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/schmooze/public_html/admin/db/admindb.php on line 2

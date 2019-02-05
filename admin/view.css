@@ -1,0 +1,75 @@
+th, td {
+	text-align: center; padding: 10px;
+}
+body{
+	
+}
+#posts{
+	margin:auto;
+    width: 90%;
+  
+    padding: 1px;
+	text-align:center;
+	
+	
+	text-decoration: none;
+	color: #b19b86;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:18px;
+	text-align:center;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	
+	padding-left:10px;
+	padding-right:10px;
+}
+#tablazat{
+	margin:auto;
+	background:rgba(0,0,0,.2);
+}
+#cim{
+	width:50%;
+}
+#tartalom{
+	
+}
+#szerk{
+	text-decoration: none;
+	color: #b19b86;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:10px;
+	text-align:center;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	
+	padding-left:10px;
+	padding-right:10px;
+}
+
+a{
+	text-decoration: none;
+	color: #b19b86;
+	letter-spacing:4px;
+	font-stretch:condensed;
+	font-family: Bodoni MT;
+	font-style: normal;
+	font-variant: small-caps;
+	font-weight: 400;
+	font-size:10px;
+	text-align:center;
+	border-top-left-radius: 5px;
+	border-top-right-radius:5px;
+	
+	padding-left:10px;
+	padding-right:10px;
+}

@@ -1,0 +1,542 @@
+﻿@charset "UTF-8";
+*	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/load.gif) center no-repeat #fff;
+	background-size:50px;
+}
+.boritek:hover{
+	box-shadow: 0px 3px 5px #888888;
+	transition: 0.6s;
+}
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100');
+
+body{
+	max-height:100vh;
+	background-color: #f7f7f7;
+}
+a{
+	text-decoration: none
+	color:black;
+}
+#mini-logo{
+	padding-top:1vh;
+	margin-left:0px;
+	height:3vh;
+	width:auto;
+	
+}
+.fel{
+	position: relative; 
+	top: 0px; 
+	left: 0px;
+	}
+.top-menu li a {
+	color:black;
+    display: block;
+    text-align: center;
+    padding-left:5vh;
+    font-family:"brandon_textmedium,sans-serif";
+	letter-spacing: 2px;
+	font-weight:normal;
+	font-variant: small-caps;
+	font-size:16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.top-menu li a {
+	color:black;
+    display: block;
+    text-align: center;
+    padding-left:5vh;
+    padding-top:auto;
+    padding-bottom:auto;
+    font-family:"Minion Pro";
+	letter-spacing: 2px;
+	font-weight:normal;
+	font-variant: small-caps;
+	font-size:16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.cim{
+	position: absolute;
+	width:100%;
+	bottom:270px;
+	right:50px;
+}
+
+.treningek{
+	width:100%;
+}
+}
+.fooldal-logo{
+	margin-top:5vh;
+}
+#fooldal-logo{
+	max-height:80px;
+	height:10vh;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:5vh;
+}
+.boritekok-box{
+padding-top:5vh;
+	max-width:1500px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:52vh;
+	width:90%;	
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content:space-around;
+}
+.borit{
+	position:relative;
+	width:auto;
+	padding-bottom:5vh;
+	padding-left:5px;
+	padding-right:5px;
+	cursor:pointer;
+	transition: 0.4s;
+}
+.boritek{
+	position:absolute;
+	height:50vh;
+	padding-top:3vh;
+	transition: 0.2s;
+}
+.boritek:hover +.kep{
+	padding-top:0;
+	transition: 0.4s;
+}
+
+
+
+.kep{
+	position:absolute;
+	z-index:-1;
+	height:52.3vh;
+	position: relative;
+ 	width:auto;
+ 	padding-top:3vh;
+ 	transition: 0.4s;
+}
+.boritekszoveg{
+	top:0;
+	position:absolute;
+	position:relative;
+	z-index: 1000;
+}
+
+.footer{
+	margin-top:5vh;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.footer p{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 5px;
+	font-weight:normal;
+	font-variant: small-caps;
+	font-size:2vh;
+	margin-left:auto;
+	margin-right:auto;
+}
+.after-box {
+  clear: left;
+}
+.fb1{
+	display:block;
+	height:3vh;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2vh;
+	cursor:pointer;
+}
+.fb1:hover{
+	opacity:0.5;
+	transition: 0.4s;
+}
+/*--------------------------------------------------------------------------------------------
+Menü
+--------------------------------------------------------------------------------------------*/
+.top-menu{
+	
+	height:5vh;
+	width:100%;
+}
+.minilogo{
+	height:3vh;
+	width:auto;
+	margin-top:1vh;
+	padding-left:10px;
+}
+.top-menu ul {
+    list-style-type: none;
+    margin-top:auto;
+    line-height:5vh;
+    padding: 0;
+}
+.top-menu li {
+    float: left;
+}
+.top-menu li a:hover {
+   opacity:0.5;
+   transition: 0.4s;
+}
+/*--------------------------------------------------------------------------------------------
+right window
+--------------------------------------------------------------------------------------------*/
+.content-window{
+
+	width:100%;
+	background-color:black;
+	position:relative;
+}
+.baloldal{
+	position: absolute;
+    height: 95vh;
+    width: 55%;
+    left: 0;
+}
+.baloldal img{
+	padding:0;
+	max-width:100%;
+	max-height:94vh;
+}
+.cikk-menu-container{
+	position:absolute;
+	width:40%;
+	min-width:200px;
+	right:2px;
+	width:40%;
+	bottom:1px;
+}
+.cikk-nav{
+	position: absolute;
+	height:200px;
+	width:100%;
+	bottom:5vh;
+	right:50px;
+	overflow:auto;
+}
+.cim-content img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.cim-content{
+	cursor:pointer;
+	transition: 0.4s;
+	text-align:center;
+}
+.cim-content h1:hover{
+	opacity:0.5;
+	transition: 0.4s;
+}
+.jobboldal{
+	top:0;
+	float: right; 
+    position: absolute;
+    height: 95vh;
+    width: 45%;
+    right: 0;
+}
+.right-content{
+	width:70%;
+	top:0;
+	height:90vh;
+	padding-left:5%;
+transition: 0.4s;
+	overflow:hidden;
+}
+.cikkcontent{
+	height:100%;
+	overflow:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+.cikkContent ul{
+	list-style-type: square;
+}
+.cikk img{
+	display:block;
+	width:80%;
+	height:auto;
+	padding-top:20px;
+
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+#myBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+input[type=email], datalist[type=idopont], input[type=number], input[type=password], input[type=tel], input[type=text], input[type=url], #n {
+    font-family: 'Josefin Sans', sans-serif;
+    background: 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0 .6rem;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 2.5rem;
+    color: black;
+    width: 70%;
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+textarea{
+	font-family: 'Josefin Sans', sans-serif;
+	background: 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0 .9375rem;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 10rem;
+    color: black;
+    width: 70%;
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+    font-size: 15px
+
+	font-weight:normal;
+}
+
+input[type=submit]#mybtn {
+	cursor:pointer;
+
+    border: solid black 1px;
+    color: black;
+    display: block;
+    font-size: 15px;
+    font-size: .9375rem;
+    max-width: 50px;
+    max-width: 8.75rem;
+    padding: 5px 10px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: nexa_rust_sans_black,helvetica,arial,sans-serif;
+    -webkit-border-radius: 4px;
+	color: black;
+    font-stretch: ultra-condensed;
+    font-family:"Bodoni MT";
+	font-variant: small-caps;
+    text-decoration: none;
+    transition: 0.4s;
+}
+input[type=submit]#mybtn:hover{
+	opacity:0.5;
+    transition: 0.4s;
+}
+input[type=jelentkezem]#jelentkezem {
+	margin-top:5px;
+	cursor:pointer;
+	background-color:#7c7c7c;
+    border: solid black 1px;
+    color: black;
+    display: block;
+    font-size: 15px;
+    padding: 5px 10px;
+    max-width:104px;
+    text-transform: uppercase;
+    font-family: nexa_rust_sans_black,helvetica,arial,sans-serif;
+    -webkit-border-radius: 4px;
+    font-stretch: ultra-condensed;
+    font-family:"Bodoni MT";
+	font-variant: small-caps;
+    text-decoration: none;
+    transition: 0.4s;
+}
+input[type=jelentkezem]#jelentkezem:hover{
+	opacity:0.5;
+    transition: 0.4s;
+}
+input {
+  background: 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 0 .6rem;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+    height: 2.5rem;
+    color: black;
+    width: 70%;
+    display: block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+.idopont-content a{
+	text-decoration: none;
+}
+
+
+
+.right-content a{
+	text-decoration:none;
+	cursor:pointer;
+	color:black;
+	
+   	transition: 0.4s;
+} 
+.right-content a:hover{
+	opacity:0.5;
+	transition: 0.4s;
+}
+
+.cikkTitle{
+	color: black;
+    font-stretch: extra-condensed;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+	font-size:50px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: 40px;
+}
+a.poszthivas:hover{
+	 transition: 0.4s;
+	opacity:0.3;
+}
+
+h1{
+
+	color: black;
+    font-stretch: extra-condensed;
+font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	font-variant: small-caps;
+	font-size:50px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: 40px;
+}
+h2 {
+	    font-stretch: ultra-condensed;
+	font-weight: thin;
+font-family: 'Josefin Sans', sans-serif;
+font-variant: small-caps;
+	font-size:25px;
+	line-height: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+}
+
+p {
+	font-stretch: ultra-condensed;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:18px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+}
+.cim-content a{
+	font-stretch: ultra-condensed;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:18px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+    font-variant: small-caps;
+}
+.cim-content p{
+	font-stretch: ultra-condensed;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:10px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+    font-variant: small-caps;
+}
+.treningek p {
+	padding-left:60px;
+	font-stretch: ultra-condensed;
+
+	font-family: 'Josefin Sans', sans-serif;
+
+	font-size:18px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+}
+.treningek h2{
+	padding-left:40px;
+	font-stretch: ultra-condensed;
+	font-weight: thin;
+	font-family: 'Josefin Sans', sans-serif;
+	font-variant: small-caps;
+	font-size:25px;
+	line-height: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    line-height: auto;
+}
+
+
+
+
+@media screen and (max-width: 1400px){
+.right-content{
+	width:80%;
+	top:0;
+	height:90vh;
+	padding-left:5%;
+	overflow:hidden;
+	transition: 0.4s;
+}
+}
+@media screen and (max-width: 1200px){
+.right-content{
+	width:90%;
+	top:0;
+	height:90vh;
+	padding-left:5%;
+	overflow:hidden;
+	transition: 0.4s;
+}
+}
